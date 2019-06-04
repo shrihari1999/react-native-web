@@ -30,7 +30,14 @@ class App extends React.Component {
         this.calculate();
       }
       else{
-        if(this.state.calculation[this.state.calculation.length-1]!=='.'){
+        if(data==='.'){
+          if(this.state.calculation[this.state.calculation.length-1]!=='.'){
+            this.setState({
+              calculation: this.state.calculation+data
+            })
+          }
+        }
+        else{
           this.setState({
             calculation: this.state.calculation+data
           })
