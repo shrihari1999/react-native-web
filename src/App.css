@@ -1,0 +1,6 @@
+.back{
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    background: #fff url('./assets/back.png') no-repeat center center / cover;
+}
